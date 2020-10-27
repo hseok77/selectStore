@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: selectStore
+  name: selectstore
   labels:
-    app: selectStore
+    app: selectstore
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: selectStore
+      app: selectstore
   template:
     metadata:
       labels:
-        app: selectStore
+        app: selectstore
     spec:
       containers:
-        - name: selectStore
-          image: username/selectStore:latest
+        - name: selectstore
+          image: username/selectstore:latest
           ports:
             - containerPort: 8080
           readinessProbe:
